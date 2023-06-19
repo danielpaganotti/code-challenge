@@ -6,7 +6,8 @@ public class PushNotificationChannel implements NotificationChannel {
 
 	@Override
 	public void sendNotification(String message, NotificationReceiver receiver) {
-		// TODO Auto-generated method stub
+		System.out.println(String.format(
+				"Sending %s notification for %s, at %s", getNotificationType(), receiver.getId(), getNotificationDateTime()));
 
 	}
 
